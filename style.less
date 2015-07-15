@@ -203,11 +203,12 @@ footer {
         color: @lightgreen;
         border-radius: 3px;
         box-shadow: 0px 2px 0px rgba(0,0,0,.15);
+        position: relative;
         text-decoration: none;
         font-size: 18px;
         background-position:  13px center;
         background-repeat: no-repeat;
-        background-image: ~"url(images/pencil-icon.svg)";
+        // background-image: ~"url(images/pencil-icon.svg)";
 
         &:hover {
 
@@ -479,24 +480,125 @@ footer {
 
 }
 
-.animation-example {
-    -webkit-animation-name: example;
-    -webkit-animation-duration:  .4s;
-    -webkit-animation-iteration-count: 3;
-    -webkit-animation-delay: .5s;
+
+.button:hover {
+
+        .line {
+            -webkit-animation-name: line;
+        }
+        .pencil {
+            -webkit-animation-name: pencil;
+        }
+    }
+
+
+
+
+.pencil-animation {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 14px;
+    top: 15px;
+    -webkit-transform: scale(.12);
+    -webkit-transform-origin: top left;
+
+    .pencil {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+
+        bottom: 10px;
+        left: 0;
+        background: ~"url(images/pencil-icon.svg)";
+        background-size: 150px;
+
+
+        -webkit-animation-duration:  1s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    .line-wrapper {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .line {
+        height: 25px;
+        background: #47ad66;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        -webkit-transform-origin: left;
+        -webkit-transform: scaleX(0);
+
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration:  3s;
+    }
+
+
+
+    .line-two {
+        -webkit-animation-delay: 1s;
+    }
+
+
+    .line-three {
+        -webkit-animation-delay: 2s;
+    }
+
 }
 
-@-webkit-keyframes example {
+@-webkit-keyframes pencil {
     0% {
-        -webkit-transform: scale(1.5);
-        opacity: .5;
+        -webkit-transform: translateX(0);
     }
-    50%{
-        -webkit-transform: scale(.7);
-        opacity: .5;
+    20%{
+        -webkit-transform: translateX(150px);
     }
-    100% {
-        -webkit-transform: scale(.7);
-        opacity: 0;
+    40% {
+        -webkit-transform: translateX(150px);
     }
+    60% {
+        -webkit-transform: translateX(75px) translateY(-40px);
+    }
+    80% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes line {
+    0% {
+        -webkit-transform: scaleX(0);
+    }
+    10%{
+        -webkit-transform: scaleX(.8);
+    }
+
+    20%{
+        -webkit-transform: scaleX(.8);
+    }
+
+    33%{
+        -webkit-transform: scaleX(.8) translateY(-60px);
+    }
+
+    53%{
+        -webkit-transform: scaleX(.8) translateY(-60px);
+    }
+
+    66%{
+        -webkit-transform: scaleX(.8) translateY(-120px);
+    }
+
+    87%{
+        -webkit-transform: scaleX(.8) translateY(-120px);
+    }
+
+    100%{
+        -webkit-transform: scaleX(.8) translateY(-180px);
+    }
+
 }
