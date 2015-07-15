@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link rel="stylesheet/less" href="style.less" type="text/css">
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+      };
+    </script>
+    <script src="less.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="branding">
+        <a title="Thimble, by mozilla" href="/"><img width="170" alt="Thimble by mozilla" src="images/thimble-logo.svg" /></a>
+      </section>
+      <section class="account-actions">
+        <a title="Sign in to Thimble" href="https://teach-api-production.herokuapp.com/auth/oauth2/authorize?callback=https%3A%2F%2Fteach.mozilla.org%2F&action=signin">Sign In</a>
+        or
+        <a title="Create a Webmaker account" href="https://teach-api-production.herokuapp.com/auth/oauth2/authorize?callback=https%3A%2F%2Fteach.mozilla.org%2F&action=signup">Create an Accont</a><div>
+    </header>
+
+    <section class="main-cta">
+      <div class="content-wrapper not-found-message">
+          <h1>Oh no!</h1>
+          <p>
+            The page you're looking for </br>
+            is not available!
+          </p>
+          <a title="Start a new Thimble project from scratch." href="https://bramble.mofostaging.net/" class="button">
+            Start a brand new project
+          </a>
+      </div>
+    </section>
+
+    <section class="remix-projects">
+      <div class="content-wrapper">
+          <h2 class="projects-heading">Or make your own version of these popular projects...</h2>
+
+          <div class="remixable-projects">
+
+            <!-- Keep Calm› Project -->
+            <div class="project keep-calm">
+              <h2 class="title">Keep Calm Poster</h2>
+              <div class="thumbnail">
+                <a href="#" title="Remix this project" class="image"></a>
+              </div>
+              <p class="description">
+                Change the text in this poster to make it your own.
+              </p>
+              <a title="Remix the Keep Calm Poster project" class="remix-button">Remix this Project</a>
+            </div>
+
+            <!-- Movie Poster Project -->
+            <div class="project movie-poster">
+              <h2 class="title">Movie Poster</h2>
+              <div class="thumbnail">
+                <a href="#" title="Remix this project" class="image"></a>
+              </div>
+              <p class="description">
+                Change the text in this poster to make it your own.
+              </p>
+              <a title="Remix the Movie Poster project" class="remix-button">Remix this Project</a>
+            </div>
+
+            <!-- Comic Strip Project -->
+            <div class="project comic-strip">
+              <h2 class="title">Comic Strip</h2>
+              <div class="thumbnail">
+                <a href="#" title="Remix this project" class="image"></a>
+              </div>
+              <p class="description">
+                Change the text in this poster to make it your own.
+              </p>
+              <a title="Remix the Comic Strip project"  class="remix-button">Remix this Project</a>
+            </div>
+
+          </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content-wrapper">
+        <div class="project-info">
+          <a class="mozilla-logo" title="mozilla" href="https://www.mozilla.org/en-US/"><img alt="mozilla" src="images/mozilla-logo.svg" /></a>
+          <p class="thimble-context">
+            Thimble is part of the Mozilla Learning Network. <br/>
+            Learn to teach like mozilla at <a href="http://teach.mozilla.org">teach.mozilla.org</a>.
+          </p>
+        </div>
+
+        <ul class="social-links">
+          <li><a title="Stuck? Get help!" class="help" href="https://support.mozilla.org/en-US/products/webmaker/thimble"><span class="icon"></span>Stuck? Get help!</a></li>
+          <li><a title="Talk to us on Twitter" class="twitter" href="https://twitter.com/mozteach"><span class="icon"></span>Talk to us on Twitter</a></li>
+          <li><a title="Contribute on Github" class="github" href="https://github.com/mozilla/thimble.webmaker.org"><span class="icon"></span>Contribute on Github</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
