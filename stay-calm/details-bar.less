@@ -1,0 +1,117 @@
+body {
+    padding-top: 50px;
+}
+
+
+.details-bar {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity .2s;
+    background: white;
+    padding: 11px 0 11px 76px;
+
+
+    .thimble-logo {
+        position: absolute;
+        width: 60px;
+        background: #2E9961;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        display: block;
+
+        .icon {
+
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+
+
+            background-image: ~"url(thimble-logo.svg)";
+            background-position: 16px center;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            transition: transform .05s linear;
+        }
+
+
+        &:hover .icon {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+
+}
+
+.details-bar h1,h2 {
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #2E9961;
+}
+
+.details-bar h1 {
+    margin: 0 0 2px 0;
+    font-size: 19px;
+}
+
+.details-bar  {
+    h2 {
+        font-size: 13px;
+    }
+}
+
+.scrolled .details-bar {
+    opacity: 0;
+}
+
+.scrolled .details-bar-remix-button .remix-button-label {
+    display: none;
+}
+
+.details-bar-remix-button-wrapper {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    padding: 4px 4px 6px 4px;
+    border-radius: 4px;
+
+}
+
+.scrolled .details-bar-remix-button-wrapper {
+    background: rgba(0,0,0,.2);
+}
+
+.details-bar-remix-button {
+
+    transition: width .1s;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: "Helvetica Neue";
+    display: block;
+    cursor: pointer;
+    background: #47AD66;
+    padding: 8px 15px 9px 15px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px #417C53;
+    color: white;
+    text-align: center;
+}
+
+
+
