@@ -24,14 +24,11 @@ body {
         display: block;
 
         .icon {
-
             position: absolute;
             left: 0px;
             top: 0px;
             bottom: 0px;
             right: 0px;
-
-
             background-image: ~"url(thimble-logo.svg)";
             background-position: 16px center;
             background-size: 24px;
@@ -44,6 +41,12 @@ body {
             transform: scale(1.1);
         }
 
+        &:active {
+            background: #28915a;
+            .icon {
+                transform: scale(1);
+            }
+        }
 
     }
 
