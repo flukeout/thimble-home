@@ -4,20 +4,21 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet/less" type="text/css" href="details-bar.less">
+
     <!-- LESS support -->
-  <script>
-    less = {
-      env: "development",
-      async: false,
-      fileAsync: false,
-      poll: 1000,
-      functions: {},
-      dumpLineNumbers: "comments",
-      relativeUrls: false,
-      rootpath: ":/a.com/"
-    };
-  </script>
-  <script src="less.js"></script>
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+      };
+    </script>
+    <script src="less.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="details-bar.js"></script>
@@ -30,12 +31,16 @@
       <a class="thimble-logo" href="http://flukeout.github.io/thimble-home">
         <span class="icon"></span>
       </a>
-      <h1>This is the title of the project</h1>
-      <h2>@zoings - 11 months ago</h2>
+      <h1 class="project-title">This is the title of the project</h1>
+      <div class="project-meta"><a class="project-author" href="#">@zoings</a> - 11 months ago</div>
     </div>
+
     <div class="details-bar-remix-button-wrapper">
-      <a class="details-bar-remix-button">Remix <span class="remix-button-label">this Project</span></a>
+      <a class="details-bar-remix-button">Remix</a>
     </div>
+
+
+
 
     <div class="wrapper">
       <!-- This is the crown image used at the top of the poster -->
