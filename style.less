@@ -483,116 +483,99 @@ footer {
 
 .button:hover {
     .line {
-            -webkit-animation-name: line;
-        }
-    .pencil {
-            -webkit-animation-name: pencil;
-        }
+        .animation(line, 3s, linear, infinite, 0s);
     }
+    .line-two {
+        .animation(line, 3s, linear, infinite, 1s);
+    }
+    .line-three {
+        .animation(line, 3s, linear, infinite, 2s);
+    }
+    .pencil {
+        .animation(pencil, 1s, linear, infinite, 0s);
+    }
+}
 
 .pencil-animation {
-    width: 200px;
-    height: 150px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     left: 14px;
-    top: 15px;
-    -webkit-transform: scale(.12);
-    -webkit-transform-origin: top left;
+    top: 14px;
 
     .pencil {
-        width: 150px;
-        height: 150px;
+        width: 90%;
+        height: 90%;
         position: absolute;
-        bottom: 10px;
+        bottom: 6%;
         left: 0;
         background: ~"url(images/pencil-icon.svg)";
-        background-size: 150px;
-        -webkit-animation-duration:  1s;
-        -webkit-animation-iteration-count: infinite;
+        background-size: 100%;
     }
 
     .line-wrapper {
-        width: 200px;
-        height: 150px;
+        width: 90%;
+        height: 90%;
         position: absolute;
         overflow: hidden;
     }
 
     .line {
-        height: 20px;
-        background: #47ad66;
+        height: 100%;
         width: 100%;
         position: absolute;
-        bottom: 0px;
-        left: 0px;
-        -webkit-transform-origin: left;
-        -webkit-transform: scaleX(0);
+        transform-origin: left;
+        transform: scaleX(0);
 
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration:  3s;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 13%;
+            background: #47ad66;
+            bottom: 0;
+        }
     }
-
-
-
-    .line-two {
-        -webkit-animation-delay: 1s;
-    }
-
-
-    .line-three {
-        -webkit-animation-delay: 2s;
-    }
-
 }
 
-@-webkit-keyframes pencil {
+@keyframes pencil {
     0% {
-        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
-    20%{
-        -webkit-transform: translateX(150px);
+    30%{
+        transform: translateX(90%);
     }
     40% {
-        -webkit-transform: translateX(150px);
+        transform: translateX(90%)
     }
     60% {
-        -webkit-transform: translateX(75px) translateY(-40px);
+        transform: translateX(50%) translateY(-30%);
     }
     80% {
-        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
-@-webkit-keyframes line {
-    0% {
-        -webkit-transform: scaleX(0);
+@keyframes line {
+    10% {
+        transform: scaleX(1);
     }
-    10%{
-        -webkit-transform: scaleX(.8);
+    20% {
+        transform: scaleX(1);
     }
-
-    20%{
-        -webkit-transform: scaleX(.8);
+    33% {
+        transform: scaleX(1) translateY(-43.5%);
     }
-
-    33%{
-        -webkit-transform: scaleX(.8) translateY(-60px);
+    53% {
+        transform: scaleX(1) translateY(-43.5%);
     }
-
-    53%{
-        -webkit-transform: scaleX(.8) translateY(-60px);
+    66% {
+        transform: scaleX(1) translateY(-87%);
     }
-
-    66%{
-        -webkit-transform: scaleX(.8) translateY(-120px);
+    87% {
+        transform: scaleX(1) translateY(-87%);
     }
-
-    87%{
-        -webkit-transform: scaleX(.8) translateY(-120px);
+    100% {
+        transform: scaleX(1) translateY(-150%);
     }
-
-    100%{
-        -webkit-transform: scaleX(.8) translateY(-180px);
-    }
-
 }
