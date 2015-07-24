@@ -93,6 +93,10 @@ p, li {
   color: rgba(0,0,0,.6);
 }
 
+p {
+    line-height: 125%;
+}
+
 p strong {
   color: rgba(0,0,0,.75);
 }
@@ -122,5 +126,6 @@ img {
     background: #222;
     padding: 10px;
     display: block;
-    color: rgba(255,255,255,.7);
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
 }
