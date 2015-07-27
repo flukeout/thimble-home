@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="camera" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <path d="M11.998,0.941 C12.311,0.941 12.586,1.059 12.821,1.294 C13.056,1.53 13.174,1.804 13.174,2.118 L13.174,10.116 C13.174,10.43 13.056,10.704 12.821,10.939 C12.586,11.175 12.311,11.292 11.998,11.292 L1.176,11.292 C0.863,11.292 0.588,11.175 0.353,10.939 C0.118,10.704 0,10.43 0,10.116 L0,2.118 C0,1.804 0.118,1.53 0.353,1.294 C0.588,1.059 0.863,0.941 1.176,0.941 L3.764,0.941 L4.705,0 L8.469,0 L9.41,0.941 L11.998,0.941 L11.998,0.941 Z M4.264,8.675 C4.911,9.322 5.685,9.645 6.587,9.645 C7.489,9.645 8.263,9.322 8.91,8.675 C9.557,8.028 9.88,7.254 9.88,6.352 C9.88,5.45 9.557,4.676 8.91,4.029 C8.263,3.382 7.489,3.059 6.587,3.059 C5.685,3.059 4.911,3.382 4.264,4.029 C3.617,4.676 3.293,5.45 3.293,6.352 C3.293,7.254 3.617,8.028 4.264,8.675 L4.264,8.675 Z M6.587,8.205 C5.352,8.205 4.734,7.587 4.734,6.352 C4.734,5.117 5.352,4.499 6.587,4.499 C7.822,4.499 8.439,5.117 8.439,6.352 C8.439,7.587 7.822,8.205 6.587,8.205 L6.587,8.205 Z" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

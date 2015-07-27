@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>computer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="computer" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <path d="M10.836,0 C11.14,0 11.407,0.116 11.639,0.348 C11.871,0.58 11.987,0.847 11.987,1.15 L11.987,8.696 C11.987,8.999 11.871,9.267 11.639,9.499 C11.407,9.731 11.14,9.847 10.836,9.847 L7.144,9.847 L8.268,11.131 L8.268,11.987 L3.719,11.987 L3.719,11.131 L4.843,9.847 L1.15,9.847 C0.847,9.847 0.579,9.731 0.348,9.499 C0.116,9.267 0,8.999 0,8.696 L0,1.15 C0,0.847 0.116,0.58 0.348,0.348 C0.579,0.116 0.847,0 1.15,0 L10.836,0 L10.836,0 Z M1.15,7.706 L10.836,7.706 L10.836,1.15 L1.15,1.15 L1.15,7.706 Z" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

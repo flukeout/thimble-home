@@ -1,0 +1,256 @@
+@darkgreen: #2E9961; //Header green,
+@lightgreen: #47AD66; //Main CTA green
+
+.animation (@name, @duration: 300ms, @ease: ease, @count: 1, @delay: 0) {
+    -webkit-animation: @name @duration @ease @count @delay ;
+    -moz-animation: @name @duration @ease @count @delay ;
+    -ms-animation: @name @duration @ease @count @delay ;
+}
+
+
+@font-face {
+    font-family: "Fira Medium";
+    src: ~"url(../fonts/FiraSansOT-Regular.otf)";
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Regular";
+    src: ~"url(../fonts/FiraSansOT-Light.otf)";
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html {
+    font-family: "Fira Regular";
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: #222;
+}
+
+.file-upload-popup {
+    background: white;
+    margin: 10px;
+    width: 550px;
+
+    h1 {
+        border-bottom: solid 2px #DDD;
+        font-size: 20px;
+        padding: 14px 20px 10px 20px;
+        position: relative;
+        margin: 0;
+
+        .dismiss-popup {
+            position: absolute;
+            top: 12px;
+            right: 6px;
+            height: 30px;
+            width: 30px;
+            background: ~"url(black-x.svg)";
+            background-size: 14px;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: .4;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .inner-content {
+        padding: 20px;
+    }
+
+    .button-bar {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        background: @lightgreen;
+        color: white;
+        text-decoration: none;
+        border-radius: 2px;
+        padding: 10px;
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0px 2px 0px #417C53;
+
+        &:hover {
+            background: #51B56B;
+        }
+
+        &:active {
+            position: relative;
+            top: 2px;
+            box-shadow: none;
+            background: #3F9956;
+        }
+
+        &.selfie-image-source .icon:after {
+            background: ~"url(camera.svg)";
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: center;
+        }
+
+        &.computer-image-source .icon:after {
+            background: ~"url(computer.svg)";
+            background-repeat: no-repeat;
+            background-size: 17px;
+            background-position: center;
+        }
+
+        .icon {
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            position: relative;
+            top: 2px;
+            margin-right: 3px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                width: 20px;
+                height: 20px;
+            }
+
+
+        }
+
+
+
+        &:last-child {
+            float: right;
+        }
+    }
+
+    .drag-files-area {
+        height: 300px;
+        border: dashed 2px #DDD;
+        color: #969696;
+        position: relative;
+        background-image: ~"url(upload-cloud.svg)";
+        background-repeat: no-repeat;
+        background-position: center 115px;
+        background-size: 70px;
+
+        .drag-instructions {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 170px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+    }
+
+    .uploading-files {
+
+        height: 390px;
+
+        .upload-indicator {
+            text-align: center;
+            position: relative;
+            top: 110px;
+
+            .title {
+                color: #BCBCBC;
+                font-size: 14px;
+                margin: 0 0 10px 0;
+            }
+
+            .cancel-upload {
+                color: white;
+                text-align: center;
+                padding: 7px 10px 6px 10px;
+                background: rgba(0,0,0,.25);
+                border-radius: 2px;
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                margin: 0 auto;
+                max-width: 60px;
+                position: relative;
+                border-bottom: solid 2px rgba(0,0,0,.2);
+
+                &:hover {
+                    background: rgba(0,0,0,.20);
+                }
+
+                &:active {
+                    background: rgba(0,0,0,.3);
+                    border: none;
+                    top: 2px;
+                }
+
+            }
+        }
+
+        .spinner {
+            height:75px;
+            width: 75px;
+            position: relative;
+            background-image: ~"url(upload-cloud.svg)";
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin-bottom: 15px;
+            display: block;
+            margin: 0 auto 15px auto;
+
+            .circle {
+                position: absolute;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: solid 2px rgba(0,0,0,.1);
+                width: 100%;
+                height: 100%;
+            }
+
+            .mask {
+                height: 54%;
+                left: 30%;
+                width: 40%;
+                top: -5%;
+                border-top: solid 10px white;
+                position: absolute;
+                box-sizing: border-box;
+                transform-origin: bottom;
+                animation: uploadSpinner 2s linear infinite;
+            }
+
+        }
+    }
+
+}
+
+
+@keyframes uploadSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
