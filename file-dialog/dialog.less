@@ -149,11 +149,17 @@ body {
         color: #969696;
         position: relative;
 
+        .drop-zone {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
         .drop-instructions {
             display: none;
         }
 
-        &:hover {
+        &.drag-over {
             border: dashed 2px #5EBF7C;
             background-color: rgba(94,191,124,.1);
 
