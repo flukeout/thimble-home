@@ -148,18 +148,37 @@ body {
         border: dashed 2px #DDD;
         color: #969696;
         position: relative;
-        background-image: ~"url(upload-cloud.svg)";
-        background-repeat: no-repeat;
-        background-position: center 115px;
-        background-size: 70px;
 
-        .drag-instructions {
+        .drop-instructions {
+            display: none;
+        }
+
+        &:hover {
+            border: dashed 2px #5EBF7C;
+            background-color: rgba(94,191,124,.1);
+
+            .drop-instructions {
+                display: block;
+                color: #26723D;
+                background-image: ~"url(upload-cloud-green.svg)";
+            }
+
+            .drag-instructions {
+                display: none;
+            }
+        }
+
+        .drag-instructions, .drop-instructions {
             position: absolute;
-            height: 200px;
+            padding-top: 60px;
             width: 200px;
-            top: 170px;
+            top: 100px;
             text-align: center;
             width: 100%;
+            background-image: ~"url(upload-cloud.svg)";
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 70px;
 
         }
 
