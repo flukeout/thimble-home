@@ -3,6 +3,8 @@
     <title>Keep Calm and Carry On</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet/less" type="text/css" href="cleanslate.css">
     <link rel="stylesheet/less" type="text/css" href="details-bar.less">
 
     <!-- LESS support -->
@@ -28,17 +30,19 @@
   <body>
 
     <!-- Inject the following into each published project at the top of the body tag -->
-    <div class="details-bar">
+    <div class="details-bar cleanslate" style="height: 64px">
       <a class="thimble-logo" href="http://flukeout.github.io/thimble-home">
         <span class="icon"></span>
       </a>
       <h1 class="project-title">This is the title of the project</h1>
       <div class="project-meta"><a class="project-author" href="#">@zoings</a> - 11 months ago</div>
+
+      <div class="details-bar-remix-button-wrapper">
+        <a class="details-bar-remix-button">Remix</a>
+      </div>
+
     </div>
 
-    <div class="details-bar-remix-button-wrapper">
-      <a class="details-bar-remix-button">Remix</a>
-    </div>
     <!-- /end injected code -->
 
     <div class="wrapper">
@@ -51,7 +55,7 @@
         <span>and</span>
         Carry<br> On
         <span>and</span>
-        Dont stop
+        Don't stop
         <span>but</span>
         Be careful
       </h1>
