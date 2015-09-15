@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Fira Medium";
+    src: ~"url(../fonts/FiraSansOT-Regular.otf)";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.details-bar {
+    width: 400px !important;
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+    height: 64px !important;
+    overflow: hidden !important;
+    background: white !important;
+    padding: 11px 110px 11px 76px !important;
+    box-sizing: border-box !important;
+    font-family: "Fira Medium", "Helvetica Neue", sans-serif !important;
+    box-shadow: 0px 2px 2px rgba(0,0,0,.5) !important;
+    transition: width ease-out .1s, background ease-out .1s !important;
+
+    .thimble-logo {
+        position: absolute !important;
+        width: 60px !important;
+        background: #2E9961 !important;
+        height: 100% !important;
+        top: 0px !important;
+        left: 0px !important;
+        display: block !important;
+
+        .icon {
+            position: absolute !important;
+            left: 0px !important;
+            top: 0px !important;
+            bottom: 0px !important;
+            right: 0px !important;
+            background-image: ~"url(thimble-logo.svg)" !important;
+            background-position: 16px center !important;
+            background-size: 24px !important;
+            background-repeat: no-repeat !important;
+            transition: transform .05s linear !important;
+        }
+
+        &:hover .icon {
+            transform: scale(1.1) !important;
+        }
+
+        &:active {
+            background: #28915a !important;
+            .icon {
+                transform: scale(1) !important;
+            }
+        }
+    }
+
+    .project-title, .project-meta {
+       font-size: 15px !important;
+       padding: 0 !important;
+       margin: 0 !important;
+       color: black !important;
+       text-align: left !important;
+       font-weight: normal !important;
+       letter-spacing: 0 !important;
+       text-transform: none !important;
+       color: #2E9961 !important;
+       white-space: nowrap !important;
+   }
+
+   .project-title {
+       margin: 1px 0 2px 0 !important;
+       font-size: 18px !important;
+       line-height: 22px !important;
+   }
+
+   .project-meta {
+       font-size: 13px !important;
+       line-height: 15px !important;
+       opacity: .6 !important;
+
+       .project-author {
+           color: inherit !important;
+           text-decoration: none !important;
+
+           &:hover {
+               text-decoration: underline !important;
+           }
+       }
+   }
+
+   .details-bar-remix-button-wrapper {
+       position: absolute !important;
+       right: 8px !important;
+       top: 8px !important;
+       background: transparent !important;
+       padding: 4px 4px 6px 4px !important;
+       border-radius: 2px !important;
+
+       .details-bar-remix-button {
+           border-radius: 2px !important;
+           font-size: 18px !important;
+           display: block !important;
+           cursor: pointer !important;
+           background: #47AD66 !important;
+           position: relative !important;
+           padding: 11px 15px 9px 15px !important;
+           border-radius: 2px !important;
+           box-shadow: 0px 2px 0px #417C53 !important;
+           color: white !important;
+           text-align: center !important;
+           text-decoration: none !important;
+
+           &:hover {
+             background: #4db76d !important;
+           }
+
+           &:active {
+             background: #369352 !important;
+             box-shadow: none !important;
+             top: 2px !important;
+           }
+       }
+    }
+
+   &.scrolled {
+     width: 105px !important;
+     padding: 11px 11px 11px 14px !important;
+     box-shadow: 0px 1px 1px rgba(0,0,0,.2) !important;
+     text-align: right !important;
+     background: rgba(255,255,255,.3) !important;
+     overflow: hidden !important;
+     border-radius: 3px !important;
+     transition: width cubic-bezier(0.535, -0.565, 0.410, 1.560) .15s, background linear .5s .3s !important;
+
+    .thimble-logo,.project-title,.project-meta {
+       display: none !important;
+     }
+   }
+
+}
