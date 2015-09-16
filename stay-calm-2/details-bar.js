@@ -9,12 +9,19 @@ $(document).on("ready",function(){
     if(scrollDistance >= detailsBarHeight){
       $(this).removeClass("scrolled");
     }
-  })
+  });
+
   detailsBar.on("mouseout",function(){
     if(scrollDistance >= detailsBarHeight){
       $(this).addClass("scrolled");
     }
-  })
+  });
+
+  $(".mobile-icon").on("click",function(){
+    alert("Show popup with info");
+  });
+
+
 });
 
 $(window).on("scroll", function(e) {
