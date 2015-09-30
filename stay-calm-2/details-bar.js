@@ -1,10 +1,7 @@
 var detailsBarHeight, detailsBar, bodyEl, scrollDistance;
 // var isTouchDevice = 'ontouchstart' in document.documentElement;
-var closeDelay = 275;
 
 $(document).on("ready",function(){
-
-
   bodyEl = $("body");
   detailsBar = $(".details-bar");
 
@@ -18,7 +15,6 @@ $(document).on("ready",function(){
       detailsBar.addClass("collapsed");
     });
 
-
   } else {
 
     detailsBar.addClass("mouse-mode");
@@ -28,31 +24,13 @@ $(document).on("ready",function(){
     });
 
     detailsBar.on("mouseleave",function(){
-      setTimeout(function(){
-        closeBar();
-      },closeDelay);
+      closeBar();
     });
-
   }
-
-
-  // $(".mobile-icon").on("click",function(){
-  //   showProjectInfo();
-  // });
 
 });
 
 function closeBar(){
   detailsBar.addClass("collapsed");
 }
-
-// $(window).on("scroll", function(e) {
-  // scrollDistance = $(this).scrollTop();
-  // if(scrollDistance >= detailsBarHeight) {
-  //   detailsBar.addClass("scrolled");
-  // } else {
-  //   detailsBar.removeClass("scrolled");
-  // }
-// });
-
 
