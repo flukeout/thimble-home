@@ -22,39 +22,52 @@
     <script src="less.js"></script>
 
     <script type="text/javascript">
-      var isTouchDevice = false;
+      // var isTouchDevice = false;
     </script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="details-bar.js"></script>
-
+    <script type="text/javascript" src="colors.js"></script>
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1">
   </head>
 
   <body>
 
-    <!-- Inject the following into each published project at the top of the body tag -->
-    <div class="details-bar cleanslate collapsed" style="height: 64px">
+    <div class="details-bar cleanslate">
 
-      <!-- <a class="thimble-logo" title="Thimble by Mozilla" href="http://flukeout.github.io/thimble-home"> -->
+      <div class="touch-bar collapsed">
 
-      <a class="close-details-bar" href="#">
-        <img src="close-x.svg" />
-      </a>
+        <h1 class="project-title">Keep Calm and Carry On</h1>
+        <div class="project-meta">By <span class="project-author">@flukeout</span> - 2 hours ago</div>
 
-      <a class="thimble-logo" title="Thimble by Mozilla" href="#">
-        <span class="icon"></span>
-      </a>
+        <div class="details-bar-remix-button-wrapper">
+          <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
+        </div>
 
-      <h1 class="project-title">Keep Calm and Carry On</h1>
-      <div class="project-meta">By <span class="project-author">@flukeout</span></div>
+        <a class="close-details-bar" href="#">
+          <img src="close-x.svg" />
+        </a>
 
-      <p class="made-with">Made with <a href="http://thimble.mozilla.org">Thimble</a> by mozilla</p>
+        <a class="thimble-button" title="Thimble by Mozilla" href="">
+          <span class="icon"></span>
+        </a>
 
-      <div class="details-bar-remix-button-wrapper">
-        <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
       </div>
 
+      <div class="mouse-bar collapsed">
+        <a class="thimble-logo" title="Thimble by Mozilla" href="thimble.mozilla.org">
+          <span class="icon"></span>
+        </a>
+        <h1 class="project-title">Keep Calm and Carry On</h1>
+        <div class="project-meta">By <span class="project-author">@flukeout</span> - 2 hours ago</div>
+        <div class="details-bar-remix-button-wrapper">
+          <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
+        </div>
+      </div>
     </div>
+
+
+
     <!-- /end injected code -->
 
     <div class="wrapper">
