@@ -22,34 +22,33 @@
 
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1">
 
-
   </head>
 
   <body>
 
     <div class="details-bar collapsed cleanslate">
 
-        <a class="thimble-logo" title="Thimble by Mozilla" href="thimble.mozilla.org">
-          <span class="icon"></span>
-        </a>
+      <a class="thimble-logo" title="Thimble by Mozilla" href="thimble.mozilla.org">
+        <span class="icon"></span>
+      </a>
 
-        <h1 class="project-title">Keep Calm and Carry On</h1>
+      <h1 class="project-title">Keep Calm and Carry On</h1>
 
-        <div class="project-meta">
-          By <span class="project-author">@flukeout</span> - 2 hours ago
-        </div>
+      <div class="project-meta">
+        By <span class="project-author">@flukeout</span> - 2 hours ago
+      </div>
 
-        <div class="details-bar-remix-button-wrapper">
-          <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
-        </div>
+      <div class="details-bar-remix-button-wrapper">
+        <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
+      </div>
 
-        <div class="close-details-bar" href="#">
-          <img src="close-x.svg" />
-        </div>
+      <div class="close-details-bar" href="#">
+        <img src="close-x.svg" />
+      </div>
 
-        <div class="thimble-button" title="Thimble by Mozilla">
-          <span class="icon"></span>
-        </div>
+      <div class="thimble-button" title="Thimble by Mozilla">
+        <span class="icon"></span>
+      </div>
 
     </div>
 
@@ -89,12 +88,12 @@ var isTouchDevice = 'ontouchstart' in document.documentElement;
     detailsBar.classList.add("mouse-mode");
   }
 
-  document.querySelector(".thimble-button").addEventListener("touchend",function(){
+  document.querySelector(".thimble-button").addEventListener("click",function(){
     detailsBar.classList.remove("collapsed");
     return false;
   });
 
-  document.querySelector(".close-details-bar").addEventListener("touchend",function(){
+  document.querySelector(".close-details-bar").addEventListener("click",function(){
     detailsBar.classList.add("collapsed");
     return false;
   });
@@ -110,7 +109,7 @@ var isTouchDevice = 'ontouchstart' in document.documentElement;
 </script>
 <!-- end of injected script -->
 
-
+<!-- just some stuff to vary the background color of the project -->
 <script>
   var colors = ["#3A3365",
   "#469023",
