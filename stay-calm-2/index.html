@@ -1,7 +1,6 @@
 <html>
   <head>
     <title>Keep Calm and Carry On</title>
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet/less" type="text/css" href="cleanslate.css">
     <link rel="stylesheet/less" type="text/css" href="details-bar.less">
@@ -21,49 +20,37 @@
     </script>
     <script src="less.js"></script>
 
-    <script type="text/javascript">
-      // var isTouchDevice = false;
-    </script>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="details-bar.js"></script>
-    <script type="text/javascript" src="colors.js"></script>
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1">
+
+
   </head>
 
   <body>
 
-    <div class="details-bar cleanslate">
+    <div class="details-bar collapsed cleanslate">
 
-      <div class="touch-bar collapsed">
-
-        <h1 class="project-title">Keep Calm and Carry On</h1>
-        <div class="project-meta">By <span class="project-author">@flukeout</span> - 2 hours ago</div>
-
-        <div class="details-bar-remix-button-wrapper">
-          <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
-        </div>
-
-        <a class="close-details-bar" href="#">
-          <img src="close-x.svg" />
-        </a>
-
-        <a class="thimble-button" title="Thimble by Mozilla" href="">
-          <span class="icon"></span>
-        </a>
-
-      </div>
-
-      <div class="mouse-bar collapsed">
         <a class="thimble-logo" title="Thimble by Mozilla" href="thimble.mozilla.org">
           <span class="icon"></span>
         </a>
+
         <h1 class="project-title">Keep Calm and Carry On</h1>
-        <div class="project-meta">By <span class="project-author">@flukeout</span> - 2 hours ago</div>
+
+        <div class="project-meta">
+          By <span class="project-author">@flukeout</span> - 2 hours ago
+        </div>
+
         <div class="details-bar-remix-button-wrapper">
           <a title="Remix this project with Thimble" class="details-bar-remix-button">Remix</a>
         </div>
-      </div>
+
+        <div class="close-details-bar" href="#">
+          <img src="close-x.svg" />
+        </div>
+
+        <div class="thimble-button" title="Thimble by Mozilla">
+          <span class="icon"></span>
+        </div>
+
     </div>
 
 
@@ -88,3 +75,57 @@
     </div>
   </body>
 </html>
+
+
+<!-- inject this script in the body -->
+<script>
+
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+  var detailsBar = document.querySelector(".details-bar");
+
+  if(isTouchDevice) {
+    detailsBar.classList.add("touch-mode");
+  } else {
+    detailsBar.classList.add("mouse-mode");
+  }
+
+  document.querySelector(".thimble-button").addEventListener("touchend",function(){
+    detailsBar.classList.remove("collapsed");
+    return false;
+  });
+
+  document.querySelector(".close-details-bar").addEventListener("touchend",function(){
+    detailsBar.classList.add("collapsed");
+    return false;
+  });
+
+  document.querySelector(".mouse-mode").addEventListener("mouseenter",function(){
+    detailsBar.classList.remove("collapsed");
+  });
+
+  document.querySelector(".mouse-mode").addEventListener("mouseleave",function(){
+    detailsBar.classList.add("collapsed");
+  });
+
+</script>
+<!-- end of injected script -->
+
+
+<script>
+  var colors = ["#3A3365",
+  "#469023",
+  "#DA4031",
+  "#D540C0",
+  "#D23870",
+  "#5D6DC2",
+  "#7E261E",
+  "#5B1737",
+  "#993F8A",
+  "#2C5310",
+  "#9861DB",
+  "#B25B15"];
+
+  var randomIndex =  Math.floor(Math.random() * colors.length);
+  document.querySelector("body").style.backgroundColor = colors[randomIndex];
+
+</script>

@@ -175,7 +175,7 @@
 }
 .cleanslate h1 {
     font-size: 2em !important;
-    padding: .67em 0 !important;
+    padding: 0 !important;
 }
 .cleanslate h2 {
     font-size: 1.5em !important;
@@ -192,7 +192,7 @@
     font-size: .83em !important;
 }
 .cleanslate p {
-    margin: 1em 0 !important;
+    margin: 0 !important;
 }
 .cleanslate table {
     display: table !important;
@@ -217,11 +217,11 @@
 /* == SPECIFIC ELEMENTS == */
 /* Some of these are browser defaults; some are just useful resets */
 .cleanslate ol, .cleanslate ul {
-    margin: 1em 0 !important;
+    margin: 0 !important;
 }
 .cleanslate ul li, .cleanslate ul ul li, .cleanslate ul ul ul li, .cleanslate ol li, .cleanslate ol ol li, .cleanslate ol ol ol li, .cleanslate ul ol ol li, .cleanslate ul ul ol li, .cleanslate ol ul ul li, .cleanslate ol ol ul li {
     list-style-position: inside !important;
-    margin-top: .08em !important;
+    margin: 0em !important;
 }
 .cleanslate ol ol, .cleanslate ol ol ol, .cleanslate ul ul, .cleanslate ul ul ul, .cleanslate ol ul, .cleanslate ol ul ul, .cleanslate ol ol ul, .cleanslate ul ol, .cleanslate ul ol ol, .cleanslate ul ul ol {
     padding-left: 40px !important;
@@ -307,7 +307,7 @@
 .cleanslate textarea {
     -webkit-appearance: textarea !important;
     background: white !important;
-    padding: 2px !important;
+    padding: 0 !important;
     margin-left: 4px !important;
     word-wrap: break-word !important;
     white-space: pre-wrap !important;
